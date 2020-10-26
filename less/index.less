@@ -1,0 +1,563 @@
+/* 设计稿宽 750 */
+@rem: 7.5rem;
+//调用方法可看这个
+.w{
+    max-width: 750/@rem;
+}
+body,html{
+    height: 100%;
+    background-color: #565759;
+}
+/* ********************************************** 自定义样式开始 *******************************************************/
+
+
+/* 登录公共样式 开始 */
+.login{
+    .message{
+        /* 医生员工登录tab切换li start */
+        ul{
+            display: flex;
+            li{
+                width: 200 / @rem;
+                height: 60 / @rem;
+                border-radius: 10 / @rem 10 / @rem 0 0;
+                background: rgba(255, 255, 255, .4);
+                font-size: 23 / @rem;
+                line-height: 60 / @rem;
+                text-align: center;
+                color: #666666;
+            }
+            .active{
+                background: #1175d2;
+                color: #ffffff;
+            }
+        }
+        /* 医生员工登录tab切换li end */
+
+
+        /* 医生账户登录 start  */
+        .content-one{
+            width: 100%;
+            padding: 25/@rem 0 65 / @rem;
+            background: #f7f7f7;
+            box-sizing: border-box;
+            .lis-text {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                .username,
+                .password {
+                    margin-top: 63 / @rem;
+                    text-indent: 11 / @rem;
+                    width: 463 /750 * 100%;
+                    height: 58 / @rem;
+                    font-size: 24 / @rem;
+                    border-bottom: 1px solid #999999;
+                    &::placeholder {
+                    font-size: 24 / @rem;
+                    color: #999999;
+                    }
+                }
+            }
+            .remember {
+                padding-top: 45 / @rem;
+                width: 463 /750 * 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                .rem-name {
+                    padding-left: 15 / @rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    span {
+                        float: left;
+                        font-size: 24 / @rem;
+                        color: #6A6A6A;
+                        margin-left: 20 / @rem;
+                    }
+                    .rem-img {
+                    position: relative;
+                        width: 28 / @rem;
+                        height: 28 / @rem;
+                        img {
+                            position: absolute;
+                            top: 0 / @rem;
+                            width: 100%;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+            .logins {
+                .login-btn {
+                    width: 400 / @rem;
+                    height: 65 / @rem;
+                    border-radius: 5 / @rem;
+                    background-color: #1175D2;
+                    text-align: center;
+                    line-height: 65 / @rem;
+                    font-size: 24 / @rem;
+                    color: #fff;
+                    margin: 92 / @rem auto 0;
+                }
+            }
+            .jump {
+                width: 463 / 750 * 100%;
+                margin: 188 / @rem auto 0;
+                display: flex;
+                justify-content: space-between;
+                a {
+                    color: #3085D6;
+                    font-size: 24 / @rem;
+                    border-bottom: 1px solid #3085D6;
+                    line-height: 48 / @rem;
+                }
+            }
+        }
+        /* 医生账户登录 end  */
+
+
+        /* 员工账户登录 start */
+        
+        .content-two {
+            width: 100%;
+            padding: 25/@rem 0 257 / @rem;
+            background: #f7f7f7;
+            box-sizing: border-box;
+            .staff-account {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .doctor-username,
+                .staff-username,
+                .password {
+                    margin-top: 65 / @rem;
+                    text-indent: 13 / @rem;
+                    width: (463 / 750) * 100%;
+                    height: 56 / @rem;
+                    font-size: 24 / @rem;
+                    border-bottom: 1px solid #999999;
+                    &::placeholder {
+                    font-size: 24 / @rem;
+                    color: #999999;
+                    }
+                }
+                
+            }
+            .logins {
+                .login-btn {
+                    width: 400 / @rem;
+                    height: 65 / @rem;
+                    border-radius: 5 / @rem;
+                    background-color: #1175D2;
+                    text-align: center;
+                    line-height: 65 / @rem;
+                    font-size: 24 / @rem;
+                    color: #fff;
+                    margin: 92 / @rem auto 0;
+                }
+            }
+        }
+        /* 员工账户登录 end */
+
+        /* 忘记密码  start*/
+        .content-three {
+            width: 100%;
+            padding: 25/@rem 0 65 / @rem;
+            background: #f7f7f7;
+            box-sizing: border-box;
+            .forget-ipt {
+                width: 463/750*100%;
+                margin: 0 auto;
+                .code-box {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .tel,
+                .code-box,
+                .new-psd,
+                .psd {
+                    text-indent: 11 / @rem;
+                    width: 100%;
+                    border-bottom: 1px solid #999999;
+                    height: 56 / @rem;
+                    box-sizing: border-box;
+                    font-size: 24 / @rem;
+                    color: #999999;
+                    margin-top: 65 / @rem;
+                    height: 56 / @rem;
+                    &::placeholder {
+                        color: #999999;
+                    }
+                    .code {
+                        text-indent: 11 / @rem;
+                        width: 180 / @rem;
+                        line-height: 56 / @rem;
+                        font-size: 24 / @rem;
+                        &::placeholder {
+                            font-size: 24 / @rem;
+                            color: #999999;
+                        }
+                    }
+                    .code-wz {
+                        color: #3686D5;
+                        font-size: 24 / @rem;
+                        line-height: 56 / @rem;
+                    }
+                }
+            }
+            .yes {
+                margin: 90 / @rem auto 0;
+                border-radius: 5 / @rem;
+                width: 400 / @rem;
+                height: 65 / @rem;
+                background-color: #1175D2;
+                text-align: center;
+                line-height: 65 / @rem;
+                color: #fff;
+                font-size: 24 / @rem;
+            }
+            .go {
+                width: 132 / @rem;
+                height: 50 / @rem;
+                text-align: center;
+                font-size: 24 / @rem;
+                line-height: 50 / @rem;
+                color: #3084D5;
+                border-bottom: 1px solid #3084D5;
+                margin: 103 / @rem auto 0;
+            }
+            
+        }
+        /* 忘记密码  end*/
+
+        /* 新密码 start */
+        .content-four {
+            width: 100%;
+            padding: 177/@rem 0 65 / @rem;
+            background: #f7f7f7;
+            box-sizing: border-box;
+            text-align: center;
+            .new {
+                font-size: 24 / @rem;
+                color: #747474;
+                span {
+                    color: #F89811;
+                    padding-left: 20 / @rem;
+                }
+            }
+            .goes {
+                width: 132 / @rem;
+                height: 50 / @rem;
+                text-align: center;
+                font-size: 24 / @rem;
+                line-height: 50 / @rem;
+                color: #3084D5;
+                border-bottom: 1px solid #3084D5;
+                margin: 181 / @rem auto 0;
+            }
+        }
+        /* 新密码 end */
+
+        /* 忘记账号 start  */
+        .content-five {
+            width: 100%;
+            padding: 25/@rem 0 65 / @rem;
+            background: #f7f7f7;
+            box-sizing: border-box;
+            text-align: center;
+            .forget-ipt {
+                width: 463/750*100%;
+                margin: 0 auto;
+                .five-code-box {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .five-tel,
+                .five-code-box{
+                    text-indent: 11 / @rem;
+                    width: 100%;
+                    border-bottom: 1px solid #999999;
+                    height: 56 / @rem;
+                    box-sizing: border-box;
+                    font-size: 24 / @rem;
+                    color: #999999;
+                    margin-top: 65 / @rem;
+                    height: 56 / @rem;
+                    &::placeholder {
+                        color: #999999;
+                    }
+                    .five-code {
+                        text-indent: 11 / @rem;
+                        width: 180 / @rem;
+                        line-height: 56 / @rem;
+                        font-size: 24 / @rem;
+                        color: #999999;
+                        &::placeholder {
+                            font-size: 24 / @rem;
+                            color: #999999;
+                        }
+                    }
+                    .five-code-wz {
+                        color: #3686D5;
+                        font-size: 24 / @rem;
+                        line-height: 56 / @rem;
+                    }
+                }
+            }
+            .five-yes {
+                margin: 90 / @rem auto 0;
+                border-radius: 5 / @rem;
+                width: 400 / @rem;
+                height: 65 / @rem;
+                background-color: #1175D2;
+                text-align: center;
+                line-height: 65 / @rem;
+                color: #fff;
+                font-size: 24 / @rem;
+            }
+            .five-go {
+                width: 132 / @rem;
+                height: 50 / @rem;
+                text-align: center;
+                font-size: 24 / @rem;
+                line-height: 50 / @rem;
+                color: #3084D5;
+                border-bottom: 1px solid #3084D5;
+                margin: 103 / @rem auto 0;
+            }
+        }
+        /* 忘记账号 end */
+
+        /* 新账户名 start */
+        .content-sex {
+            width: 100%;
+            padding: 177/@rem 0 65 / @rem;
+            background: #f7f7f7;
+            box-sizing: border-box;
+            text-align: center;
+            .new {
+                font-size: 24 / @rem;
+                color: #747474;
+                span {
+                    color: #F89811;
+                    padding-left: 20 / @rem;
+                }
+            }
+            .goes {
+                width: 132 / @rem;
+                height: 50 / @rem;
+                text-align: center;
+                font-size: 24 / @rem;
+                line-height: 50 / @rem;
+                color: #3084D5;
+                border-bottom: 1px solid #3084D5;
+                margin: 181 / @rem auto 0;
+            }
+        }
+        /* 新账户名 end */
+
+        /* 注册医生账户 start */
+        .content-seven {
+            
+          
+            width: 100%;
+            padding: 25/@rem 0 65 / @rem;
+            background: #f7f7f7;
+            box-sizing: border-box;
+            .forget-ipt {
+                width: 463/750*100%;
+                margin: 0 auto;
+                .code-box {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .doctor-name,
+                .doctor-hospital,
+                .address,
+                .tel,
+                .mailbox,
+                .code-box,
+                .new-zh,
+                .new-psd,
+                .psd {
+                    text-indent: 11 / @rem;
+                    width: 100%;
+                    border-bottom: 1px solid #999999;
+                    height: 56 / @rem;
+                    box-sizing: border-box;
+                    font-size: 24 / @rem;
+                    color: #999999;
+                    margin-top: 65 / @rem;
+                    height: 56 / @rem;
+                    &::placeholder {
+                        color: #999999;
+                    }
+                    .code {
+                        text-indent: 11 / @rem;
+                        width: 180 / @rem;
+                        line-height: 56 / @rem;
+                        font-size: 24 / @rem;
+                        &::placeholder {
+                            font-size: 24 / @rem;
+                            color: #999999;
+                        }
+                    }
+                    .code-wz {
+                        color: #3686D5;
+                        font-size: 24 / @rem;
+                        line-height: 56 / @rem;
+                    }
+                }
+            }
+            .yes {
+                margin: 90 / @rem auto 0;
+                border-radius: 5 / @rem;
+                width: 400 / @rem;
+                height: 65 / @rem;
+                background-color: #1175D2;
+                text-align: center;
+                line-height: 65 / @rem;
+                color: #fff;
+                font-size: 24 / @rem;
+            }
+            .go {
+                width: 132 / @rem;
+                height: 50 / @rem;
+                text-align: center;
+                font-size: 24 / @rem;
+                line-height: 50 / @rem;
+                color: #3084D5;
+                border-bottom: 1px solid #3084D5;
+                margin: 103 / @rem auto 0;
+            }
+            
+        }
+        /* 注册医生账户 end */
+
+        /* 注册医生账户成功 start  */
+        .content-eight {
+            width: 100%;
+            padding: 112/@rem 0 65 / @rem;
+            background: #f7f7f7;
+            box-sizing: border-box;
+            text-align: center;
+            .tips {
+                margin-bottom: 50 / @rem;
+                font-size: 24 / @rem;
+                color: #666666;
+            }
+            .eight-zh,
+            .eight-psd {
+                font-size: 24 / @rem;
+                color: #666666;
+                span {
+                    color: #F99400;
+                }
+            }
+            .eight-psd  {
+                margin-top: 30 / @rem;
+            }
+            .go {
+                width: 132 / @rem;
+                height: 50 / @rem;
+                text-align: center;
+                font-size: 24 / @rem;
+                line-height: 50 / @rem;
+                color: #3084D5;
+                border-bottom: 1px solid #3084D5;
+                margin: 118 / @rem auto 0;
+            }
+        }
+        /* 注册医生账户成功 end */
+    }
+    .flogo{
+        position: absolute;
+        bottom: 58 / @rem;
+        left: 50%;
+        width: 240 / @rem;
+        height: 25 / @rem;
+        transform: translateX(-50%);
+    }
+}
+
+.register-box{
+    height: auto;
+
+    .flogos{
+        margin:130 / @rem auto 78 / @rem;
+        width: 240 / @rem;
+        height: 25 / @rem;
+     
+    }
+}
+
+
+.dn{
+    display: none;
+}
+/* 登录公共样式 结束 矮苹果*/
+@media screen and(max-height : 640px){
+    .login-box  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+        .message{
+            margin-top: 0;
+        }
+    }
+}
+
+/* 登录公共样式 结束 苹果加白条*/
+@media screen and(max-height : 560px){
+    .login .logo{
+        top: 30 / @rem;
+    }
+    .login-box  {
+        .message{
+            margin-top: 20/@rem;
+        }
+    }
+    .login .message .content-two{
+        padding: 25/@rem 0 157 / @rem;
+    }
+    .login .message .content-three .go{
+        margin: 63 / @rem auto 0;
+    }
+}
+
+/* 登录公共样式 结束 小ipad*/
+@media screen and(min-width : 760px) and(max-width : 1025px){
+    .login-box  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+        .message{
+            margin-top: 0;
+        }
+    }
+    .login .message .content-two{
+        padding: 25/@rem 0 157 / @rem;
+    }
+
+
+    .login .message .content-one .jump{
+        margin: 88 / @rem auto 0;
+    }
+
+    .login .message .content-three .go{
+        margin: 63 / @rem auto 0;
+    }
+    .login .message .content-three .yes{
+        margin: 63 / @rem auto 0;
+    }
+
+    .login .message .content-three .forget-ipt .tel, .login .message .content-three .forget-ipt .code-box, .login .message .content-three .forget-ipt .new-psd, .login .message .content-three .forget-ipt .psd{
+        margin-top: 35 / @rem;
+    }
+}

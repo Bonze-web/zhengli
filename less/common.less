@@ -1,0 +1,522 @@
+/* 设计稿宽 750 */
+@rem: 7.5vw;
+body,
+html {
+    width: 100%;
+    height: 100%;
+    min-height:100%;
+    overflow-x:hidden;
+    position: relative;
+    font-family: "SourceHanSans-CN-Regular",SourceHanSansCn-Medium,Microsoft Yahei,Hiragino Sans GB,Helvetica Neue,Helvetica,tahoma,arial,WenQuanYi Micro Hei,Verdana,sans-serif,"\5B8B\4F53";
+}
+input{
+    font-family: "SourceHanSans-CN-Regular",SourceHanSansCn-Medium,Microsoft Yahei,Hiragino Sans GB,Helvetica Neue,Helvetica,tahoma,arial,WenQuanYi Micro Hei,Verdana,sans-serif,"\5B8B\4F53";
+}
+/* 表单提示文字颜色 */
+::-webkit-input-placeholder {
+    // color: #ee9918;
+}
+
+/* 大盒子公共样式 */
+.pg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 定位居中 */
+.center(@w, @h) {
+    //居中
+    margin-left: -@w/2;
+    margin-top: -@h/2;
+}
+
+//less 定位函数
+.lt(@w: 'auto', @h: 1500px, @l: 0, @t: 0) {
+    //左上定位
+    width: @w;
+    height: @h;
+    position: absolute;
+    left: @l;
+    top: @t;
+}
+
+.ps {
+    position: absolute;
+}
+
+.dn {
+    display: none;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    display: block;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input,
+select {
+    outline: none;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+li {
+    list-style: none;
+}
+
+div {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img[src=""] {
+    display: none;
+}
+
+//调用方法可看这个
+.inner-box {
+    .lt(750/@rem, 1500/@rem, 0, 50%);
+    .center(0, 1500/@rem)
+}
+.setwh(@width: 0,@height: 0){
+    width: @width / @rem;
+    height: @height / @rem;
+}
+.w{
+    max-width: 750/@rem;
+}
+
+
+@font-face {
+    font-family: "SourceHanSans-CN-Regular";
+    src: url("../font/Source Han Sans CN Regular.ttf") format("truetype"),
+         url("../font/Source Han Sans CN Regular.eot") format("embedded-opentype"),
+         url("../font/Source Han Sans CN Regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+/* ********************************************** 自定义样式开始 *******************************************************/
+
+
+/* 登录公共样式 开始 */
+.login{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    overflow-y: auto;
+    padding: 0 25 / @rem;
+    box-sizing: border-box;
+    background:#565759 url("../img/bg.png") no-repeat center 290 / @rem ;;
+    .logo{
+        position: absolute;
+        top: 55 / @rem;
+        left: 50%;
+        width: 209 / @rem;
+        height: 40 / @rem;
+        transform: translateX(-50%);
+    }
+    .message{
+        width: 100%;
+        height: auto;   
+        margin-top:262 / @rem;
+        
+        ul{
+            display: flex;
+            li{
+                width: 200 / @rem;
+                height: 60 / @rem;
+                border-radius: 10 / @rem 10 / @rem 0 0;
+                background: rgba(255, 255, 255, .4);
+                font-size: 23 / @rem;
+                line-height: 60 / @rem;
+                text-align: center;
+                color: #666666;
+            }
+            .active{
+                background: #1175d2;
+                color: #ffffff;
+            }
+        }
+        .content{
+            width: 100%;
+            padding: 106/@rem 0 66/@rem;
+            background: #f7f7f7;
+            box-sizing: border-box;
+        }
+    }
+    .flogo{
+        position: absolute;
+        bottom: 58 / @rem;
+        left: 50%;
+        width: 240 / @rem;
+        height: 25 / @rem;
+        transform: translateX(-50%);
+    }
+}
+/* 登录公共样式 结束 */
+
+/* 导航栏 开始 */
+/* 导航栏 开始 */
+.nav {
+    width: 100%;
+    height: 96 / @rem;
+    padding: 0 25 / @rem;
+    background-color: rgb(53,59,67);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* logo */
+    .logo {
+        .setwh(168,32);
+        img {
+            width: 100%;
+        }
+    }
+    /* 菜单按钮 */
+    .menu {
+        .setwh(38,34);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    /* 导航栏盒子 */
+    .menu-box {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(5, 5, 5, 0.2);
+        display: none;
+        z-index: 99999;
+        .menu-list {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 305 / @rem;
+            height: 100%;
+            padding-top: 60 / @rem;
+            background-color: rgb(249,249,249);
+            box-sizing: border-box;
+            border-radius: 10 / @rem 0 0 10 / @rem;
+            opacity: 0;
+            li {
+                width: 100%;
+                border-bottom: 1px solid rgb(204,204,204);
+                
+                a {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    height: 100 / @rem;
+                    font-size: 26 / @rem;
+                    text-align: center;
+                    line-height: 100 / @rem;
+                    &::before {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        content: "";
+                        width: 8 / @rem;
+                        height: 100 / @rem;
+                        background-color: transparent;
+                    }
+                }
+                &:nth-of-type(1) {
+                    a {
+                        height: 70 / @rem;
+                        line-height: 70 / @rem;
+                        &::before {
+                            height: 70 / @rem;
+                        }
+                    }
+                }
+            }
+            .menu-active {
+                a {
+                    color: rgb(17,117,210);
+                    &::before {
+                        background-color: rgb(17,117,210);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 导航栏 结束 */
+
+/* 动画 */
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes fadeOutRight {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+}
+/* 导航栏 结束 */
+
+/* 弹层公共样式 开始 */
+.layer-big{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    position: fixed;
+    top:0;
+    left:0;
+    .layer {
+        display: flex;
+        height: 100%;
+        justify-content:center; 
+        align-items:center;
+        padding-left: 32 / @rem;
+        padding-right: 31 / @rem;
+        
+        .layer-inner {
+            width: 100%;
+            padding-top: 36 / @rem;
+            background-color: #fff;
+            border-radius: 5 / @rem;
+            .layer-inner-box {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 20 / @rem;
+                    p {
+                        padding-left: 42 / @rem;
+                        font-size: 24 / @rem;
+                        color: #999999;
+                    }
+                }
+            
+            .layer-btn {
+                display: flex;
+                justify-content: space-between;
+                height: 67 / @rem;
+                border-top: 1px solid #979797;
+                line-height: 67 / @rem;
+                div {
+                    width: 50%;
+                    text-align: center;
+                    font-size: 24 / @rem;
+                }
+                .cancel {
+                    color: #999999;
+                    border-right: 1px solid #979797;
+                }
+                .save {
+                    color: #7fb1e3;
+                }
+               
+            }
+        }
+    }
+}
+/* 弹层公共样式 结束 */
+
+/* 保质矫治器公共样式 开始 */
+.appliance{
+    background-color: #dfe0e2;
+    height: 100%;
+    // 头部样式开始
+    .headbox{
+        height: 85 / @rem;
+        background-color: #565759;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:0 47/@rem;
+        text-align: center;
+        
+        .centre-text{
+            line-height: 85 / @rem;
+            font-size: 26 / @rem;
+            color: #ffffff;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .left-arrow{
+            width: 17 / @rem;
+            height: 27 / @rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .right-text{
+            color: #f99400;
+            font-size: 26 / @rem;
+        }
+        
+    }
+    .contentbox{
+        background-color: #dfe0e2;
+        padding: 5 / @rem 25 / @rem 25/@rem 25 / @rem;
+        box-sizing: border-box;
+        .content{
+            overflow: hidden;
+            width: auto;
+            padding-bottom: 50/@rem;
+            background-color: #f9f9f9;
+            border-radius: 10 / @rem;
+            .content-btn{
+                width: 300 / @rem;
+                height: 66 / @rem;
+                background-color: #1175d2;
+                line-height: 66 / @rem;
+                border-radius: 15 / @rem;
+                margin-top: 43 / @rem;
+                margin-left: 20 / @rem;
+                .text-c{
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   img{
+                    width: 21 / @rem;
+                    height: 24 / @rem;
+                    margin-right: 16 / @rem;
+                   }
+                    span{
+                        color: #fff;
+                        font-size: 26 / @rem;
+                    }
+                }
+                
+            }
+            .appliance-listbox{
+                .appliance-title{
+                    margin:0 42/@rem;
+                    margin-top: 83 / @rem;
+                    font-size: 26 / @rem;
+                    color: #666666;
+                    display: flex;
+                    li{
+                        width: 33%;
+                    }
+                }
+                .appliance-list{
+                    margin-top: 40 / @rem;
+                    li{
+                        padding:0 42/@rem;
+                        height: 88 / @rem;
+                        display: flex;
+                        align-items: center;
+                        span{
+                            color: #666666;
+                            font-size: 26 / @rem;
+                            width: 33.33%;
+                           
+                        }
+                        div{
+                            color: #666666;
+                            font-size: 26 / @rem;
+                            width: 33.33%;
+                            display: flex;
+                            align-items: center;
+                            span{
+                                width: 100%;
+                            }
+                            img{
+                                width: 24 / @rem;
+                                height: 24 / @rem;
+                                margin-right: 20 / @rem;
+                            }
+                        }
+                        // span:nth-child(2){
+                        //     margin-left: 100 / @rem;
+                        // }
+                        // span:nth-child(3){
+                        //     margin-left: 145 / @rem;
+                        // }
+                    }
+                    li:nth-child(odd){
+                        background-color: #edeeee;
+                    }
+                }
+            }
+        }
+    }
+    // 头部样式结束
+}
+/* 保质矫治器公共样式 结束 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 高度小于 680
+@media screen and (max-height:181.33vw) {
+
+}
+
+// 高度小于 600
+@media screen and (max-height:160vw) {
+
+}
+
+
+// 高度小于 550
+@media screen and (max-height:148vw) {
+
+}

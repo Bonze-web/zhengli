@@ -1,0 +1,577 @@
+/* 设计稿宽 750 */
+.w {
+  max-width: 100rem;
+}
+body,
+html {
+  height: 100%;
+  background-color: #565759;
+}
+/* ********************************************** 自定义样式开始 *******************************************************/
+/* 登录公共样式 开始 */
+.login .message {
+  /* 医生员工登录tab切换li start */
+  /* 医生员工登录tab切换li end */
+  /* 医生账户登录 start  */
+  /* 医生账户登录 end  */
+  /* 员工账户登录 start */
+  /* 员工账户登录 end */
+  /* 忘记密码  start*/
+  /* 忘记密码  end*/
+  /* 新密码 start */
+  /* 新密码 end */
+  /* 忘记账号 start  */
+  /* 忘记账号 end */
+  /* 新账户名 start */
+  /* 新账户名 end */
+  /* 注册医生账户 start */
+  /* 注册医生账户 end */
+  /* 注册医生账户成功 start  */
+  /* 注册医生账户成功 end */
+}
+.login .message ul {
+  display: flex;
+}
+.login .message ul li {
+  width: 26.66666667rem;
+  height: 8rem;
+  border-radius: 1.33333333rem 1.33333333rem 0 0;
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 3.06666667rem;
+  line-height: 8rem;
+  text-align: center;
+  color: #666666;
+}
+.login .message ul .active {
+  background: #1175d2;
+  color: #ffffff;
+}
+.login .message .content-one {
+  width: 100%;
+  padding: 3.33333333rem 0 8.66666667rem;
+  background: #f7f7f7;
+  box-sizing: border-box;
+}
+.login .message .content-one .lis-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login .message .content-one .lis-text .username,
+.login .message .content-one .lis-text .password {
+  margin-top: 8.4rem;
+  text-indent: 1.46666667rem;
+  width: 61.73333333%;
+  height: 7.73333333rem;
+  font-size: 3.2rem;
+  border-bottom: 1px solid #999999;
+}
+.login .message .content-one .lis-text .username::placeholder,
+.login .message .content-one .lis-text .password::placeholder {
+  font-size: 3.2rem;
+  color: #999999;
+}
+.login .message .content-one .remember {
+  padding-top: 6rem;
+  width: 61.73333333%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.login .message .content-one .remember .rem-name {
+  padding-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login .message .content-one .remember .rem-name span {
+  float: left;
+  font-size: 3.2rem;
+  color: #6A6A6A;
+  margin-left: 2.66666667rem;
+}
+.login .message .content-one .remember .rem-name .rem-img {
+  position: relative;
+  width: 3.73333333rem;
+  height: 3.73333333rem;
+}
+.login .message .content-one .remember .rem-name .rem-img img {
+  position: absolute;
+  top: 0rem;
+  width: 100%;
+  vertical-align: middle;
+}
+.login .message .content-one .logins .login-btn {
+  width: 53.33333333rem;
+  height: 8.66666667rem;
+  border-radius: 0.66666667rem;
+  background-color: #1175D2;
+  text-align: center;
+  line-height: 8.66666667rem;
+  font-size: 3.2rem;
+  color: #fff;
+  margin: 12.26666667rem auto 0;
+}
+.login .message .content-one .jump {
+  width: 61.73333333%;
+  margin: 25.06666667rem auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+.login .message .content-one .jump a {
+  color: #3085D6;
+  font-size: 3.2rem;
+  border-bottom: 1px solid #3085D6;
+  line-height: 6.4rem;
+}
+.login .message .content-two {
+  width: 100%;
+  padding: 3.33333333rem 0 34.26666667rem;
+  background: #f7f7f7;
+  box-sizing: border-box;
+}
+.login .message .content-two .staff-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login .message .content-two .staff-account .doctor-username,
+.login .message .content-two .staff-account .staff-username,
+.login .message .content-two .staff-account .password {
+  margin-top: 8.66666667rem;
+  text-indent: 1.73333333rem;
+  width: 61.73333333%;
+  height: 7.46666667rem;
+  font-size: 3.2rem;
+  border-bottom: 1px solid #999999;
+}
+.login .message .content-two .staff-account .doctor-username::placeholder,
+.login .message .content-two .staff-account .staff-username::placeholder,
+.login .message .content-two .staff-account .password::placeholder {
+  font-size: 3.2rem;
+  color: #999999;
+}
+.login .message .content-two .logins .login-btn {
+  width: 53.33333333rem;
+  height: 8.66666667rem;
+  border-radius: 0.66666667rem;
+  background-color: #1175D2;
+  text-align: center;
+  line-height: 8.66666667rem;
+  font-size: 3.2rem;
+  color: #fff;
+  margin: 12.26666667rem auto 0;
+}
+.login .message .content-three {
+  width: 100%;
+  padding: 3.33333333rem 0 8.66666667rem;
+  background: #f7f7f7;
+  box-sizing: border-box;
+}
+.login .message .content-three .forget-ipt {
+  width: 61.73333333%;
+  margin: 0 auto;
+}
+.login .message .content-three .forget-ipt .code-box {
+  display: flex;
+  justify-content: space-between;
+}
+.login .message .content-three .forget-ipt .tel,
+.login .message .content-three .forget-ipt .code-box,
+.login .message .content-three .forget-ipt .new-psd,
+.login .message .content-three .forget-ipt .psd {
+  text-indent: 1.46666667rem;
+  width: 100%;
+  border-bottom: 1px solid #999999;
+  box-sizing: border-box;
+  font-size: 3.2rem;
+  color: #999999;
+  margin-top: 8.66666667rem;
+  height: 7.46666667rem;
+}
+.login .message .content-three .forget-ipt .tel::placeholder,
+.login .message .content-three .forget-ipt .code-box::placeholder,
+.login .message .content-three .forget-ipt .new-psd::placeholder,
+.login .message .content-three .forget-ipt .psd::placeholder {
+  color: #999999;
+}
+.login .message .content-three .forget-ipt .tel .code,
+.login .message .content-three .forget-ipt .code-box .code,
+.login .message .content-three .forget-ipt .new-psd .code,
+.login .message .content-three .forget-ipt .psd .code {
+  text-indent: 1.46666667rem;
+  width: 24rem;
+  line-height: 7.46666667rem;
+  font-size: 3.2rem;
+}
+.login .message .content-three .forget-ipt .tel .code::placeholder,
+.login .message .content-three .forget-ipt .code-box .code::placeholder,
+.login .message .content-three .forget-ipt .new-psd .code::placeholder,
+.login .message .content-three .forget-ipt .psd .code::placeholder {
+  font-size: 3.2rem;
+  color: #999999;
+}
+.login .message .content-three .forget-ipt .tel .code-wz,
+.login .message .content-three .forget-ipt .code-box .code-wz,
+.login .message .content-three .forget-ipt .new-psd .code-wz,
+.login .message .content-three .forget-ipt .psd .code-wz {
+  color: #3686D5;
+  font-size: 3.2rem;
+  line-height: 7.46666667rem;
+}
+.login .message .content-three .yes {
+  margin: 12rem auto 0;
+  border-radius: 0.66666667rem;
+  width: 53.33333333rem;
+  height: 8.66666667rem;
+  background-color: #1175D2;
+  text-align: center;
+  line-height: 8.66666667rem;
+  color: #fff;
+  font-size: 3.2rem;
+}
+.login .message .content-three .go {
+  width: 17.6rem;
+  height: 6.66666667rem;
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 6.66666667rem;
+  color: #3084D5;
+  border-bottom: 1px solid #3084D5;
+  margin: 13.73333333rem auto 0;
+}
+.login .message .content-four {
+  width: 100%;
+  padding: 23.6rem 0 8.66666667rem;
+  background: #f7f7f7;
+  box-sizing: border-box;
+  text-align: center;
+}
+.login .message .content-four .new {
+  font-size: 3.2rem;
+  color: #747474;
+}
+.login .message .content-four .new span {
+  color: #F89811;
+  padding-left: 2.66666667rem;
+}
+.login .message .content-four .goes {
+  width: 17.6rem;
+  height: 6.66666667rem;
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 6.66666667rem;
+  color: #3084D5;
+  border-bottom: 1px solid #3084D5;
+  margin: 24.13333333rem auto 0;
+}
+.login .message .content-five {
+  width: 100%;
+  padding: 3.33333333rem 0 8.66666667rem;
+  background: #f7f7f7;
+  box-sizing: border-box;
+  text-align: center;
+}
+.login .message .content-five .forget-ipt {
+  width: 61.73333333%;
+  margin: 0 auto;
+}
+.login .message .content-five .forget-ipt .five-code-box {
+  display: flex;
+  justify-content: space-between;
+}
+.login .message .content-five .forget-ipt .five-tel,
+.login .message .content-five .forget-ipt .five-code-box {
+  text-indent: 1.46666667rem;
+  width: 100%;
+  border-bottom: 1px solid #999999;
+  box-sizing: border-box;
+  font-size: 3.2rem;
+  color: #999999;
+  margin-top: 8.66666667rem;
+  height: 7.46666667rem;
+}
+.login .message .content-five .forget-ipt .five-tel::placeholder,
+.login .message .content-five .forget-ipt .five-code-box::placeholder {
+  color: #999999;
+}
+.login .message .content-five .forget-ipt .five-tel .five-code,
+.login .message .content-five .forget-ipt .five-code-box .five-code {
+  text-indent: 1.46666667rem;
+  width: 24rem;
+  line-height: 7.46666667rem;
+  font-size: 3.2rem;
+  color: #999999;
+}
+.login .message .content-five .forget-ipt .five-tel .five-code::placeholder,
+.login .message .content-five .forget-ipt .five-code-box .five-code::placeholder {
+  font-size: 3.2rem;
+  color: #999999;
+}
+.login .message .content-five .forget-ipt .five-tel .five-code-wz,
+.login .message .content-five .forget-ipt .five-code-box .five-code-wz {
+  color: #3686D5;
+  font-size: 3.2rem;
+  line-height: 7.46666667rem;
+}
+.login .message .content-five .five-yes {
+  margin: 12rem auto 0;
+  border-radius: 0.66666667rem;
+  width: 53.33333333rem;
+  height: 8.66666667rem;
+  background-color: #1175D2;
+  text-align: center;
+  line-height: 8.66666667rem;
+  color: #fff;
+  font-size: 3.2rem;
+}
+.login .message .content-five .five-go {
+  width: 17.6rem;
+  height: 6.66666667rem;
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 6.66666667rem;
+  color: #3084D5;
+  border-bottom: 1px solid #3084D5;
+  margin: 13.73333333rem auto 0;
+}
+.login .message .content-sex {
+  width: 100%;
+  padding: 23.6rem 0 8.66666667rem;
+  background: #f7f7f7;
+  box-sizing: border-box;
+  text-align: center;
+}
+.login .message .content-sex .new {
+  font-size: 3.2rem;
+  color: #747474;
+}
+.login .message .content-sex .new span {
+  color: #F89811;
+  padding-left: 2.66666667rem;
+}
+.login .message .content-sex .goes {
+  width: 17.6rem;
+  height: 6.66666667rem;
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 6.66666667rem;
+  color: #3084D5;
+  border-bottom: 1px solid #3084D5;
+  margin: 24.13333333rem auto 0;
+}
+.login .message .content-seven {
+  width: 100%;
+  padding: 3.33333333rem 0 8.66666667rem;
+  background: #f7f7f7;
+  box-sizing: border-box;
+}
+.login .message .content-seven .forget-ipt {
+  width: 61.73333333%;
+  margin: 0 auto;
+}
+.login .message .content-seven .forget-ipt .code-box {
+  display: flex;
+  justify-content: space-between;
+}
+.login .message .content-seven .forget-ipt .doctor-name,
+.login .message .content-seven .forget-ipt .doctor-hospital,
+.login .message .content-seven .forget-ipt .address,
+.login .message .content-seven .forget-ipt .tel,
+.login .message .content-seven .forget-ipt .mailbox,
+.login .message .content-seven .forget-ipt .code-box,
+.login .message .content-seven .forget-ipt .new-zh,
+.login .message .content-seven .forget-ipt .new-psd,
+.login .message .content-seven .forget-ipt .psd {
+  text-indent: 1.46666667rem;
+  width: 100%;
+  border-bottom: 1px solid #999999;
+  box-sizing: border-box;
+  font-size: 3.2rem;
+  color: #999999;
+  margin-top: 8.66666667rem;
+  height: 7.46666667rem;
+}
+.login .message .content-seven .forget-ipt .doctor-name::placeholder,
+.login .message .content-seven .forget-ipt .doctor-hospital::placeholder,
+.login .message .content-seven .forget-ipt .address::placeholder,
+.login .message .content-seven .forget-ipt .tel::placeholder,
+.login .message .content-seven .forget-ipt .mailbox::placeholder,
+.login .message .content-seven .forget-ipt .code-box::placeholder,
+.login .message .content-seven .forget-ipt .new-zh::placeholder,
+.login .message .content-seven .forget-ipt .new-psd::placeholder,
+.login .message .content-seven .forget-ipt .psd::placeholder {
+  color: #999999;
+}
+.login .message .content-seven .forget-ipt .doctor-name .code,
+.login .message .content-seven .forget-ipt .doctor-hospital .code,
+.login .message .content-seven .forget-ipt .address .code,
+.login .message .content-seven .forget-ipt .tel .code,
+.login .message .content-seven .forget-ipt .mailbox .code,
+.login .message .content-seven .forget-ipt .code-box .code,
+.login .message .content-seven .forget-ipt .new-zh .code,
+.login .message .content-seven .forget-ipt .new-psd .code,
+.login .message .content-seven .forget-ipt .psd .code {
+  text-indent: 1.46666667rem;
+  width: 24rem;
+  line-height: 7.46666667rem;
+  font-size: 3.2rem;
+}
+.login .message .content-seven .forget-ipt .doctor-name .code::placeholder,
+.login .message .content-seven .forget-ipt .doctor-hospital .code::placeholder,
+.login .message .content-seven .forget-ipt .address .code::placeholder,
+.login .message .content-seven .forget-ipt .tel .code::placeholder,
+.login .message .content-seven .forget-ipt .mailbox .code::placeholder,
+.login .message .content-seven .forget-ipt .code-box .code::placeholder,
+.login .message .content-seven .forget-ipt .new-zh .code::placeholder,
+.login .message .content-seven .forget-ipt .new-psd .code::placeholder,
+.login .message .content-seven .forget-ipt .psd .code::placeholder {
+  font-size: 3.2rem;
+  color: #999999;
+}
+.login .message .content-seven .forget-ipt .doctor-name .code-wz,
+.login .message .content-seven .forget-ipt .doctor-hospital .code-wz,
+.login .message .content-seven .forget-ipt .address .code-wz,
+.login .message .content-seven .forget-ipt .tel .code-wz,
+.login .message .content-seven .forget-ipt .mailbox .code-wz,
+.login .message .content-seven .forget-ipt .code-box .code-wz,
+.login .message .content-seven .forget-ipt .new-zh .code-wz,
+.login .message .content-seven .forget-ipt .new-psd .code-wz,
+.login .message .content-seven .forget-ipt .psd .code-wz {
+  color: #3686D5;
+  font-size: 3.2rem;
+  line-height: 7.46666667rem;
+}
+.login .message .content-seven .yes {
+  margin: 12rem auto 0;
+  border-radius: 0.66666667rem;
+  width: 53.33333333rem;
+  height: 8.66666667rem;
+  background-color: #1175D2;
+  text-align: center;
+  line-height: 8.66666667rem;
+  color: #fff;
+  font-size: 3.2rem;
+}
+.login .message .content-seven .go {
+  width: 17.6rem;
+  height: 6.66666667rem;
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 6.66666667rem;
+  color: #3084D5;
+  border-bottom: 1px solid #3084D5;
+  margin: 13.73333333rem auto 0;
+}
+.login .message .content-eight {
+  width: 100%;
+  padding: 14.93333333rem 0 8.66666667rem;
+  background: #f7f7f7;
+  box-sizing: border-box;
+  text-align: center;
+}
+.login .message .content-eight .tips {
+  margin-bottom: 6.66666667rem;
+  font-size: 3.2rem;
+  color: #666666;
+}
+.login .message .content-eight .eight-zh,
+.login .message .content-eight .eight-psd {
+  font-size: 3.2rem;
+  color: #666666;
+}
+.login .message .content-eight .eight-zh span,
+.login .message .content-eight .eight-psd span {
+  color: #F99400;
+}
+.login .message .content-eight .eight-psd {
+  margin-top: 4rem;
+}
+.login .message .content-eight .go {
+  width: 17.6rem;
+  height: 6.66666667rem;
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 6.66666667rem;
+  color: #3084D5;
+  border-bottom: 1px solid #3084D5;
+  margin: 15.73333333rem auto 0;
+}
+.login .flogo {
+  position: absolute;
+  bottom: 7.73333333rem;
+  left: 50%;
+  width: 32rem;
+  height: 3.33333333rem;
+  transform: translateX(-50%);
+}
+.register-box {
+  height: auto;
+}
+.register-box .flogos {
+  margin: 17.33333333rem auto 10.4rem;
+  width: 32rem;
+  height: 3.33333333rem;
+}
+.dn {
+  display: none;
+}
+/* 登录公共样式 结束 矮苹果*/
+@media screen and (max-height: 640px) {
+  .login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .login-box .message {
+    margin-top: 0;
+  }
+}
+/* 登录公共样式 结束 苹果加白条*/
+@media screen and (max-height: 560px) {
+  .login .logo {
+    top: 4rem;
+  }
+  .login-box .message {
+    margin-top: 2.66666667rem;
+  }
+  .login .message .content-two {
+    padding: 3.33333333rem 0 20.93333333rem;
+  }
+  .login .message .content-three .go {
+    margin: 8.4rem auto 0;
+  }
+}
+/* 登录公共样式 结束 小ipad*/
+@media screen and (min-width: 760px) and (max-width: 1025px) {
+  .login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .login-box .message {
+    margin-top: 0;
+  }
+  .login .message .content-two {
+    padding: 3.33333333rem 0 20.93333333rem;
+  }
+  .login .message .content-one .jump {
+    margin: 11.73333333rem auto 0;
+  }
+  .login .message .content-three .go {
+    margin: 8.4rem auto 0;
+  }
+  .login .message .content-three .yes {
+    margin: 8.4rem auto 0;
+  }
+  .login .message .content-three .forget-ipt .tel,
+  .login .message .content-three .forget-ipt .code-box,
+  .login .message .content-three .forget-ipt .new-psd,
+  .login .message .content-three .forget-ipt .psd {
+    margin-top: 4.66666667rem;
+  }
+}

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=750,target-densitydpi=device-dpi,user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width,target-densitydpi=device-dpi,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>临床偏好</title>
+    <link rel="stylesheet" href="//common.yscase.com/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/clinic.css">
+</head>
+
+<body>
+    <!-- 导航栏 开始 -->
+    <div class="nav">
+        <!-- logo -->
+        <img src="img/LOGO.png"class="logo">
+        <!-- 菜单按钮 -->
+        <div class="menu">
+            <img src="img/menu.png" class="menu-img">
+        </div>
+        <div class="menu-box">
+            <ul class="menu-list">
+                <li>
+                    <a href="/management.html">病例管理</a>
+                </li>
+                <li>
+                    <a href="/center.html">个人中心</a>
+                </li>
+                <li>
+                    <a href="/help.html">帮助中心</a>
+                </li>
+                <li>
+                    <a href="/clinic.html">临床偏好</a>
+                </li>
+                <li>
+                    <a href="/modification.html">修改密码</a>
+                </li>
+                <li>
+                    <a href="/index.html">退出登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航栏 结束 -->
+    <!-- 临床内容盒子 -->
+    <div class="clinical-box">
+        <div class="title">- 临床偏好 -</div>
+        <div class="clinical-bd">
+            <ul>
+                <li class="subject1">
+                    <div class="subject-hd">
+                        <span>1.牙位记录法</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li>
+                                <div class="radio"></div>
+                                <p>Universal牙位标记法(#1-#32)</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>Palmer牙标记法(UR8-LR8)</p>
+                            </li>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>国际牙科联盟牙位标记法(1.8-4.8)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject2">
+                    <div class="subject-hd">
+                        <span>2.双颌治疗</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>公司默认设置</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>上下颌同时开始</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>上下颌同时结束</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject3">
+                    <div class="subject-hd">
+                        <span>3.被动矫治器</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li>
+                                <div class="radio"></div>
+                                <p>是的,请增加被动矫治器用以匹配拥有更多步数的对颌</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>不是,请在双颌使用同等数量的主动矫治器</p>
+                            </li>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>以上选项均不是</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject4">
+                    <div class="subject-hd">
+                        <span>4.初次ClinCheck治疗方案中是否设计片切</span>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>是</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>否</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject5">
+                    <div class="subject-hd">
+                        <span>5.推迟步数再开始IPR</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <p>(仅实施最初的治疗计划)</p>
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>不推迟</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>推迟步数推迟到第<span>6</span>步/(共10步)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject6">
+                    <div class="subject-hd">
+                        <span>6.推迟附件粘结</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <p>(仅实施最初的治疗计划)</p>
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>不推迟</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>推迟步数推迟到第<span>6</span>步/(共10步)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject7">
+                    <div class="subject-hd">
+                        <span>7.推迟步数再开始IPR</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <p>(仅实施最初的治疗计划)</p>
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>不推迟</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>推迟步数推迟到第<span>6</span>步/(共10步)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject8">
+                    <div class="subject-hd">
+                        <span>8.缺失牙填充物</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li>
+                                <div class="radio"></div>
+                                <p>对于超过4 mm的间隙,将自动放置全尺寸假牙空·泡。当邻牙移动时(例如,在拔牙治疗中) ,假牙空泡将随着其所占空间的增加或减小而自动调整宽</p>
+                            </li>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <div class="content">
+                                    <p>其他：请选择以下一个或多个选项</p>
+                                    <div class="current"><div class="checkbox"></div>拔牙治疗不添加缺失牙填充物</div>
+                                    <div><div class="checkbox"></div>后牙间隙不添加缺失牙填充物</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject9">
+                    <div class="subject-hd">
+                        <span>9.扩弓</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li>
+                                <div class="radio"></div>
+                                <p>尖牙、前磨牙及磨牙区域增加牙弓宽度</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>只在尖牙及前磨牙区域增加牙弓宽度</p>
+                            </li>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>只在前磨牙及磨牙区域增加牙弓宽度维持牙</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>弓形态,不扩弓</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject10">
+                    <div class="subject-hd">
+                        <span>10.每个象限的扩弓量</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>&lt;=每象限2毫米</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>每象限大于2毫米</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject11">
+                    <div class="subject-hd">
+                        <span>11.过小牙的处理</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>侧切牙远中预留间隙</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>侧切牙近远中预留间隙</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>片切对牙合关闭间隙</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject12">
+                    <div class="subject-hd">
+                        <span>12.上切牙排齐选择</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <div class="content">
+                                    <p>排齐切端</p>
+                                    <div class="current">
+                                        <div class="checkbox"></div>切牙与中切牙切端排齐
+                                    </div>
+                                    <div>
+                                        <div class="checkbox"></div>
+                                        侧切牙比中切牙切端短0.5毫米
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>排齐龈缘</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject13">
+                    <div class="subject-hd">
+                        <span>13.矫治器边缘切割</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <p>针对牙龈吸收或者倒凹区较大</p>
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>矫治器边缘切割在釉牙骨质界至龈缘1/2处</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>矫治器切割到釉牙骨质界</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject14">
+                    <div class="subject-hd">
+                        <span>14.针对间隙关闭,应用虚拟C-Chain</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <p>针对间隙关闭的过矫正矫治器</p>
+                        <ul>
+                            <li>
+                                <div class="radio"></div>
+                                <p>是</p>
+                            </li>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>否</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject15">
+                    <div class="subject-hd">
+                        <span>15.未端磨牙变形</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <p>(印模或扫描中出现末端磨牙变形)</p>
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <div class="content">
+                                    <p>通过虚拟移除末端磨牙的远中部分来移除变形。矫治器将包裹末端磨牙近中部分来避免过度萌出。</p>
+                                    <div class="current">
+                                        <div class="checkbox"></div>如果移除末端磨牙的远中部分仍无法完全移除变形,需要完全移除变形的末端磨牙,必要时移除相邻磨牙的远中部分从而使矫治器能正确就位。我理解无法覆盖末端磨牙造成过度萌出的可能性及我将在临床上解决该问题
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>尽可能通过修整变形的末端磨牙然后将其纳入3D模型中。注：这将可能导致矫治器贴合问题及修整后的牙齿解剖形态可能不准确。若牙齿修整仍无法符合基本要求，将采用选项#1。</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>请勿使用带有变形末端磨牙的印模或扫描。请通过正丽科技网站提醒我寄送新的印模或扫描。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject16">
+                    <div class="subject-hd">
+                        <span>16.附件</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <a href="javascript:;">侧切牙远中预留间隙</a>
+                    </div>
+                </li>
+                <li class="subject17">
+                    <div class="subject-hd">
+                        <span>17.优化附件尺寸</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li>
+                                <p>(1)对于前牙</p>
+                                <ul>
+                                    <li class="active">
+                                        <div class="radio"></div>
+                                        <p>常规尺寸</p>
+                                    </li>
+                                    <li>
+                                        <div class="radio"></div>
+                                        <p>适用的最大尺寸</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>(2)对于后牙</p>
+                                <ul>
+                                    <li>
+                                        <div class="radio"></div>
+                                        <p>常规尺寸</p>
+                                    </li>
+                                    <li class="active">
+                                        <div class="radio"></div>
+                                        <p>适用的最大尺寸</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject18">
+                    <div class="subject-hd">
+                        <span>18.尖牙及磨牙矢状向关系</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <p>精密切割界面</p>
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <div class="content">
+                                    <p>只保留优化附件</p>
+                                    <div class="current">
+                                        <div class="checkbox"></div>
+                                        需要的话,将扣的开窗改为钩子,保留优化附件
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>只保留精密切割</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>保留精密切开,并使用传统附件</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subject19">
+                    <div class="subject-hd">
+                        <span>19.开始牵引的步骤</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <div class="box"></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="demand">
+                <h3>特殊需求</h3>
+                <p>( 这项临床偏好可供您输入在以上临床偏好中没有涉及到的其他的临床偏好说明。)</p>
+                <textarea></textarea>
+            </div>
+        </div>
+        <div class="clinical-fd">
+            <p>*黑色加粗字体</p>
+            <div class="btns">
+                <div class="cancel">取消</div>
+                <div class="alter active">提交修改</div>
+            </div>
+        </div>
+    </div>
+    <!-- 临床内容盒子 end -->
+    <!-- 屏幕旋转提示 -->
+    <script src="//common.yscase.com/js/LandscapeTip.js"></script>
+    <script src="//common.yscase.com/js/libs/jquery/jquery.min.3.5.1.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,960 @@
+.dn {
+  display: none;
+}
+body,
+html {
+  min-height: 100%;
+  background-color: #dfe0e2;
+}
+.personal-centre {
+  margin-bottom: 10.66666667rem;
+}
+.personal-centre .centre-control .account-switching {
+  background-color: #565759;
+  padding-top: 13.33333333rem;
+}
+.personal-centre .centre-control .account-switching .account-box {
+  display: flex;
+  padding: 0 3.33333333rem;
+}
+.personal-centre .centre-control .account-switching .account-box > div {
+  padding: 0 3.73333333rem;
+  line-height: 8rem;
+  height: 8rem;
+  color: #fff;
+  font-size: 3.33333333rem;
+  border-radius: 1.6rem 1.6rem 0 0;
+}
+.personal-centre .centre-control .account-switching div.account-box-active {
+  background-color: #fff;
+  color: #1175d2;
+}
+.personal-centre .centre-control .doctor-content {
+  background-color: #dfe0e2;
+  padding: 0 3.33333333rem;
+}
+.personal-centre .centre-control .doctor-content li {
+  list-style: none;
+  font-size: 3.46666667rem;
+  color: #333;
+}
+.personal-centre .centre-control .doctor-content .information {
+  margin-top: 9.33333333rem;
+}
+.personal-centre .centre-control .doctor-content .information .inf-title {
+  padding: 0 3.06666667rem;
+  padding-bottom: 3.33333333rem;
+  font-size: 3.33333333rem;
+  color: #1175d2;
+}
+.personal-centre .centre-control .doctor-content .information .info-content {
+  background-color: #fff;
+  border-radius: 1.06666667rem;
+}
+.personal-centre .centre-control .doctor-content .information .info-content ul > li {
+  padding: 4.53333333rem 3.06666667rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+}
+.personal-centre .centre-control .doctor-content .information .info-content ul > li .info-right {
+  display: flex;
+  align-items: center;
+  color: #666666;
+}
+.personal-centre .centre-control .doctor-content .information .info-content ul > li .info-right img {
+  width: 1.46666667rem;
+  height: 2.93333333rem;
+  margin-left: 3.33333333rem;
+}
+.personal-centre .centre-control .doctor-content .address .address-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.06666667rem;
+  padding-top: 7.2rem;
+  padding-bottom: 3.33333333rem;
+}
+.personal-centre .centre-control .doctor-content .address .address-header .address-title {
+  font-size: 3.33333333rem;
+  color: #1175d2;
+}
+.personal-centre .centre-control .doctor-content .address .address-header .address-right {
+  display: flex;
+  align-items: center;
+}
+.personal-centre .centre-control .doctor-content .address .address-header .address-right span {
+  color: #666;
+  font-size: 2.93333333rem;
+  margin-right: 1.06666667rem;
+}
+.personal-centre .centre-control .doctor-content .address .address-header .address-right img {
+  width: 1.46666667rem;
+  height: 2.93333333rem;
+  margin-top: 0.26666667rem;
+}
+.personal-centre .centre-control .doctor-content .address .address-content {
+  position: relative;
+  background-color: #fff;
+  border-radius: 1.06666667rem;
+  padding: 4.4rem 3.06666667rem;
+  font-size: 3.33333333rem;
+  display: flex;
+  flex-direction: column;
+}
+.personal-centre .centre-control .doctor-content .address .address-content .address-name {
+  display: flex;
+  color: #333333;
+}
+.personal-centre .centre-control .doctor-content .address .address-content .address-name span:nth-child(1) {
+  max-width: 20rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.personal-centre .centre-control .doctor-content .address .address-content .address-name .phone {
+  margin-left: 8rem;
+}
+.personal-centre .centre-control .doctor-content .address .address-content .address-position {
+  padding-top: 4.26666667rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.personal-centre .centre-control .doctor-content .address .address-content .address-position span.message {
+  word-wrap: break-word;
+  color: #666666;
+  padding-right: 22rem;
+  line-height: 4.8rem;
+}
+.personal-centre .centre-control .doctor-content .address .address-content .edit-box {
+  position: absolute;
+  right: 3.06666667rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1175d2;
+}
+.personal-centre .centre-control .doctor-content .remind {
+  padding-top: 7.2rem;
+}
+.personal-centre .centre-control .doctor-content .remind .inf-title {
+  padding: 0 3.06666667rem;
+  padding-bottom: 3.33333333rem;
+  font-size: 3.33333333rem;
+  color: #1175d2;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content {
+  background-color: #fff;
+  border-radius: 1.06666667rem;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li {
+  padding: 4.53333333rem 3.06666667rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li .info-right {
+  display: flex;
+  align-items: center;
+  color: #666666;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li .info-right img {
+  width: 1.46666667rem;
+  height: 2.93333333rem;
+  margin-left: 3.33333333rem;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:first-of-type .info-right {
+  color: #666666;
+  position: relative;
+  width: 6.66666667rem;
+  height: 4rem;
+  background: #dfe0e2;
+  border-radius: 2rem;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:first-of-type .info-right span {
+  position: absolute;
+  top: 0.26666667rem;
+  width: 3.46666667rem;
+  height: 3.46666667rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:first-of-type .info-right.active {
+  background-color: #f99400;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:first-of-type .info-right.active span {
+  right: 0.26666667rem;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:last-of-type {
+  width: 100%;
+  padding: 4.53333333rem 3.06666667rem;
+  box-sizing: border-box;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:last-of-type .remind-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:last-of-type .remind-box .remind-box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:last-of-type .remind-box .remind-regulations > li {
+  font-size: 2.93333333rem;
+  color: #666666;
+  padding-bottom: 3.33333333rem;
+}
+.personal-centre .centre-control .new-account {
+  width: 100%;
+  height: 100%;
+  background-color: #dfe0e2;
+  box-sizing: border-box;
+  padding: 0 3.33333333rem 0;
+}
+.personal-centre .centre-control .new-account .new-button {
+  width: 40rem;
+  padding-top: 6.4rem;
+  overflow: hidden;
+}
+.personal-centre .centre-control .new-account .new-button img {
+  width: 100%;
+}
+.personal-centre .centre-control .new-account .employee-list {
+  padding-top: 8.66666667rem;
+}
+.personal-centre .centre-control .new-account .employee-list p {
+  font-size: 3.46666667rem;
+  color: #1175d2;
+}
+.personal-centre .centre-control .new-account .employee-list p em {
+  color: #666666;
+  font-weight: 400;
+}
+.personal-centre .centre-control .new-account .list-information {
+  padding-top: 4.66666667rem;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(1) {
+  border-radius: 1.33333333rem 1.33333333rem 0 0;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(1) p {
+  display: block;
+  font-size: 3.06666667rem;
+  color: #666666;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(1) p:nth-child(1) {
+  width: 19.46666667rem;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(1) p:nth-child(2) {
+  width: 25.73333333rem;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(1) p:nth-child(3) {
+  width: 37.86666667rem;
+  padding-right: 5.33333333rem;
+}
+.personal-centre .centre-control .new-account .list-information li {
+  width: 100%;
+  height: 13.6rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-left: 5.33333333rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.personal-centre .centre-control .new-account .list-information li p {
+  font-size: 3.06666667rem;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(n+2) {
+  width: 100%;
+  height: 13.6rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-left: 5.33333333rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(n+2) p {
+  display: block;
+  font-size: 3.06666667rem;
+  color: #333333;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(n+2) p:nth-child(1) {
+  width: 19.46666667rem;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(n+2) p:nth-child(2) {
+  width: 25.73333333rem;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(n+2) p:nth-child(3) {
+  width: 37.86666667rem;
+  padding-right: 5.33333333rem;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(2n) {
+  width: 100%;
+  height: 13.6rem;
+  background-color: #edeeee;
+  box-sizing: border-box;
+  padding-left: 5.33333333rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.personal-centre .address-revise .content-box,
+.personal-centre .address-add .content-box {
+  border-radius: 1.06666667rem;
+  margin-top: 6.66666667rem;
+  padding: 0rem 3.33333333rem 2rem 3.33333333rem;
+  box-sizing: border-box;
+}
+.personal-centre .address-revise .content-box .content-bg,
+.personal-centre .address-add .content-box .content-bg {
+  background-color: #fff;
+  border-radius: 1.06666667rem;
+}
+.personal-centre .address-revise .content-box .content-bg li,
+.personal-centre .address-add .content-box .content-bg li {
+  font-size: 3.46666667rem;
+  padding: 4.53333333rem 3.06666667rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+.personal-centre .address-revise .content-box .content-bg li label,
+.personal-centre .address-add .content-box .content-bg li label {
+  width: 13.86666667rem;
+  margin-right: 5.2rem;
+  color: #666666;
+}
+.personal-centre .address-revise .content-box .content-bg li input,
+.personal-centre .address-add .content-box .content-bg li input {
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 56.4rem;
+}
+.personal-centre .address-revise .content-box .sub-btn,
+.personal-centre .address-add .content-box .sub-btn {
+  margin-top: 9.33333333rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.personal-centre .address-revise .content-box .sub-btn > div,
+.personal-centre .address-add .content-box .sub-btn > div {
+  width: 53.33333333rem;
+  height: 8.53333333rem;
+  line-height: 8.53333333rem;
+  font-size: 3.2rem;
+  text-align: center;
+  border-radius: 1.06666667rem;
+}
+.personal-centre .address-revise .content-box .sub-btn .preserve,
+.personal-centre .address-add .content-box .sub-btn .preserve {
+  border: 1px #1175d2 solid;
+  background-color: #1175d2;
+  color: #fff;
+}
+.personal-centre .address-revise .content-box .sub-btn .cancel,
+.personal-centre .address-add .content-box .sub-btn .cancel {
+  margin-top: 6rem;
+  border: 1px #e53636 solid;
+  color: #e53636;
+}
+.personal-centre .address-add .content-box .sub-btn .cancel {
+  border: 1px #1175d2 solid;
+  color: #333333;
+}
+.personal-centre .address-list .list-box {
+  border-radius: 1.06666667rem;
+  margin-top: 6.66666667rem;
+  padding: 0rem 3.33333333rem 2rem 3.33333333rem;
+  box-sizing: border-box;
+}
+.personal-centre .address-list .list-box .content-bg {
+  background-color: #fff;
+  border-radius: 1.06666667rem;
+}
+.personal-centre .address-list .list-box .content-bg li {
+  position: relative;
+  border-radius: 1.06666667rem;
+  padding: 4.4rem 3.06666667rem 0;
+  font-size: 3.33333333rem;
+  display: flex;
+  flex-direction: column;
+}
+.personal-centre .address-list .list-box .content-bg li .border-bottom-box {
+  border-bottom: 1px #ccc solid;
+  padding-bottom: 4.4rem;
+}
+.personal-centre .address-list .list-box .content-bg li:last-of-type .border-bottom-box {
+  border-bottom: 1px #fff solid;
+}
+.personal-centre .address-list .list-box .content-bg li .address-name {
+  display: flex;
+  color: #333333;
+}
+.personal-centre .address-list .list-box .content-bg li .address-name span:nth-child(1) {
+  max-width: 20rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.personal-centre .address-list .list-box .content-bg li .address-name .phone {
+  margin-left: 8rem;
+}
+.personal-centre .address-list .list-box .content-bg li .address-position {
+  padding-top: 4.26666667rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.personal-centre .address-list .list-box .content-bg li .address-position span.message {
+  word-wrap: break-word;
+  color: #727272;
+  padding-right: 22rem;
+  line-height: 4.8rem;
+}
+.personal-centre .address-list .list-box .content-bg li .edit-box {
+  position: absolute;
+  right: 3.06666667rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4b96dc;
+}
+.personal-centre .address-list .list-box .sub-btn {
+  margin-top: 9.33333333rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.personal-centre .address-list .list-box .sub-btn > div {
+  width: 53.33333333rem;
+  height: 8.53333333rem;
+  line-height: 8.53333333rem;
+  font-size: 3.2rem;
+  text-align: center;
+  border-radius: 1.06666667rem;
+}
+.personal-centre .address-list .list-box .sub-btn .preserve {
+  border: 1px #1175d2 solid;
+  background-color: #1175d2;
+  color: #fff;
+}
+.personal-centre .address-list .list-box .sub-btn .cancel {
+  margin-top: 6rem;
+  border: 1px #1175d2 solid;
+  color: #1175d2;
+}
+.personal-centre .phone-revise .headbox .right-text,
+.personal-centre .postbox-revise .headbox .right-text,
+.personal-centre .account-revise .headbox .right-text {
+  color: #b7b8b8;
+}
+.personal-centre .phone-revise .phone-number-box,
+.personal-centre .postbox-revise .phone-number-box,
+.personal-centre .account-revise .phone-number-box {
+  padding: 5.33333333rem 6rem 0;
+}
+.personal-centre .phone-revise .phone-number-box .cur-number,
+.personal-centre .postbox-revise .phone-number-box .cur-number,
+.personal-centre .account-revise .phone-number-box .cur-number {
+  color: #666666;
+  font-size: 2.93333333rem;
+}
+.personal-centre .phone-revise .phone-number-box .new-phone,
+.personal-centre .postbox-revise .phone-number-box .new-phone,
+.personal-centre .account-revise .phone-number-box .new-phone {
+  margin-top: 2rem;
+  padding: 3.06666667rem 4rem;
+  background-color: #fff;
+  border-radius: 1.06666667rem;
+  display: flex;
+  align-items: center;
+}
+.personal-centre .phone-revise .phone-number-box .new-phone input,
+.personal-centre .postbox-revise .phone-number-box .new-phone input,
+.personal-centre .account-revise .phone-number-box .new-phone input {
+  width: 100%;
+  font-size: 3.33333333rem;
+  color: #333333;
+}
+.personal-centre .phone-revise .phone-number-box .new-phone input::placeholder,
+.personal-centre .postbox-revise .phone-number-box .new-phone input::placeholder,
+.personal-centre .account-revise .phone-number-box .new-phone input::placeholder {
+  color: #333333;
+}
+.personal-centre .phone-revise .phone-number-box .proving-code,
+.personal-centre .postbox-revise .phone-number-box .proving-code,
+.personal-centre .account-revise .phone-number-box .proving-code {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.53333333rem;
+}
+.personal-centre .phone-revise .phone-number-box .proving-code .proving-phone,
+.personal-centre .postbox-revise .phone-number-box .proving-code .proving-phone,
+.personal-centre .account-revise .phone-number-box .proving-code .proving-phone {
+  padding: 3.06666667rem 4rem;
+  background-color: #ecedee;
+  border-radius: 1.06666667rem;
+  box-sizing: border-box;
+  width: 52.4rem;
+  display: flex;
+  align-items: center;
+}
+.personal-centre .phone-revise .phone-number-box .proving-code .proving-phone input,
+.personal-centre .postbox-revise .phone-number-box .proving-code .proving-phone input,
+.personal-centre .account-revise .phone-number-box .proving-code .proving-phone input {
+  width: 100%;
+  font-size: 3.33333333rem;
+  color: #333333;
+}
+.personal-centre .phone-revise .phone-number-box .proving-code .send-prov,
+.personal-centre .postbox-revise .phone-number-box .proving-code .send-prov,
+.personal-centre .account-revise .phone-number-box .proving-code .send-prov {
+  width: 33.33333333rem;
+  padding: 3.06666667rem 0;
+  background-color: #1175d2;
+  color: #fff;
+  text-align: center;
+  font-size: 3.2rem;
+  box-sizing: border-box;
+  border-radius: 1.06666667rem;
+}
+.personal-centre .employeee-information {
+  width: 100%;
+  height: 100%;
+  background-color: #dfe0e2;
+  box-sizing: border-box;
+}
+.personal-centre .employeee-information .return-rutton {
+  width: 6.93333333rem;
+  height: 6.93333333rem;
+  padding-top: 1.73333333rem;
+}
+.personal-centre .employeee-information .return-rutton img {
+  width: 100%;
+}
+.personal-centre .employeee-information .employee-information-list {
+  padding: 4.4rem 0 0 2.93333333rem;
+}
+.personal-centre .employeee-information .employee-information-list p {
+  font-size: 3.06666667rem;
+  color: #1175d2;
+}
+.personal-centre .employeee-information .employee-number {
+  margin-top: 3.86666667rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1.33333333rem;
+  padding: 5.06666667rem 7.2rem 7.73333333rem 3.06666667rem;
+  box-sizing: border-box;
+}
+.personal-centre .employeee-information .employee-number li {
+  display: flex;
+  justify-content: space-between;
+}
+.personal-centre .employeee-information .employee-number li span {
+  font-size: 3.06666667rem;
+  color: #333333;
+}
+.personal-centre .employeee-information .employee-number li span:nth-child(2) {
+  flex: 0 0 85%;
+  text-align: right;
+  color: #666666;
+}
+.personal-centre .employeee-information .employee-number li:nth-child(2) {
+  padding: 9.06666667rem 0;
+}
+.personal-centre .employeee-information .account-permissions {
+  padding: 7.33333333rem 0 0 2.93333333rem;
+}
+.personal-centre .employeee-information .account-permissions p {
+  font-size: 3.06666667rem;
+  color: #1175d2;
+}
+.personal-centre .employeee-information .account-permissions-text {
+  margin-top: 3.73333333rem;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 1.33333333rem;
+  padding: 5.6rem 5.6rem 8.8rem 2.93333333rem;
+  box-sizing: border-box;
+}
+.personal-centre .employeee-information .account-permissions-text h2 {
+  font-weight: 400;
+  font-size: 3.46666667rem;
+  font-size: #333333;
+}
+.personal-centre .employeee-information .account-permissions-text p {
+  font-size: 2.93333333rem;
+  color: #666666;
+  margin-top: 4.93333333rem;
+}
+.personal-centre .employeee-information .account-permissions-text p:nth-child(n + 3) {
+  font-size: 2.93333333rem;
+  color: #666666;
+  margin-top: 4rem;
+}
+.personal-centre .employeee-information .account-permissions-text p:last-child {
+  font-size: 2.8rem;
+  color: #b1b1b1;
+  margin-top: 13.73333333rem;
+}
+.personal-centre .employeee-information .modify-information {
+  width: 53.33333333rem;
+  height: 8.8rem;
+  border-radius: 0.66666667rem;
+  border: 1px solid #1175d2;
+  background-color: #1175d2;
+  text-align: center;
+  line-height: 8.8rem;
+  margin: 7.73333333rem auto 6rem;
+}
+.personal-centre .employeee-information .modify-information p {
+  font-size: 3.06666667rem;
+  color: #fff;
+}
+.personal-centre .employeee-information .modify-cancel {
+  width: 53.33333333rem;
+  height: 8.8rem;
+  border-radius: 0.66666667rem;
+  border: 1px solid #1175d2;
+  text-align: center;
+  line-height: 8.8rem;
+  margin: 0 auto;
+}
+.personal-centre .employeee-information .modify-cancel p {
+  font-size: 3.06666667rem;
+  color: #333333;
+}
+.personal-centre .create-new-account .return-account-rutton {
+  width: 6.93333333rem;
+  height: 6.93333333rem;
+  padding-top: 1.73333333rem;
+}
+.personal-centre .create-new-account .return-account-rutton img {
+  width: 100%;
+}
+.personal-centre .create-new-account .employee-information-account {
+  padding: 4.4rem 0 0 2.93333333rem;
+}
+.personal-centre .create-new-account .employee-information-account p {
+  font-size: 3.06666667rem;
+  color: #1175d2;
+}
+.personal-centre .create-new-account .account-number-list {
+  width: 100%;
+  border-radius: 1.33333333rem;
+  background-color: #fff;
+  margin-top: 3.6rem;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(-n + 5) {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 13.33333333rem;
+  border-bottom: 1px solid #c9c9c9;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(-n + 5) p {
+  font-size: 3.46666667rem;
+  color: #666666;
+  line-height: 13.33333333rem;
+  padding-left: 2.93333333rem;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(-n + 5) .text-xm {
+  width: 69.33333333rem;
+  color: #333333;
+  font-size: 3.46666667rem;
+  padding-right: 2.93333333rem;
+  box-sizing: border-box;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(-n + 5) .text-xm::-webkit-input-placeholder {
+  color: #333333;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(5) {
+  border-bottom: 1px solid #ffffff;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(n+6) {
+  display: flex;
+  align-items: center;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(n+6) div {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #1175d2;
+  border-radius: 0.66666667rem;
+  margin: 0 2.53333333rem 0 2.93333333rem;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(n+6) div img {
+  margin-top: 0.4rem;
+  width: 100%;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(n+6) p {
+  font-size: 3.06666667rem;
+  color: #333333;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(7) {
+  padding: 5.46666667rem 0;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(8) {
+  padding-bottom: 14.93333333rem;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(9) {
+  font-size: 2.93333333rem;
+  color: #999999;
+  padding: 0 2.93333333rem 6rem;
+}
+.personal-centre .create-new-account .modify-keep {
+  width: 53.33333333rem;
+  height: 8.8rem;
+  border-radius: 0.66666667rem;
+  border: 1px solid #1175d2;
+  background-color: #1175d2;
+  text-align: center;
+  line-height: 8.8rem;
+  margin: 7.73333333rem auto 6rem;
+}
+.personal-centre .create-new-account .modify-keep p {
+  font-size: 3.06666667rem;
+  color: #fff;
+}
+.personal-centre .create-new-account .modify-cancel {
+  width: 53.33333333rem;
+  height: 8.8rem;
+  border-radius: 0.66666667rem;
+  border: 1px solid #1175d2;
+  text-align: center;
+  line-height: 8.8rem;
+  margin: 0 auto;
+}
+.personal-centre .create-new-account .modify-cancel p {
+  font-size: 3.06666667rem;
+  color: #333333;
+}
+.personal-centre .cancel-number {
+  box-sizing: border-box;
+}
+.personal-centre .cancel-number .return-account-cancel {
+  width: 6.93333333rem;
+  height: 6.93333333rem;
+  padding-top: 1.73333333rem;
+}
+.personal-centre .cancel-number .return-account-cancel img {
+  width: 100%;
+}
+.personal-centre .cancel-number .employee-information-cancel {
+  padding: 4.4rem 0 0 2.93333333rem;
+}
+.personal-centre .cancel-number .employee-information-cancel p {
+  font-size: 3.06666667rem;
+  color: #1175d2;
+}
+.personal-centre .cancel-number .employee-information-cancel p em {
+  color: #666666;
+  font-weight: 400;
+}
+.personal-centre .cancel-number .delete-account-number {
+  display: block;
+  width: 100%;
+  height: 14.26666667rem;
+  background-color: #fff;
+  border-radius: 1.33333333rem;
+  margin-top: 3.73333333rem;
+  font-size: 3.33333333rem;
+  box-sizing: border-box;
+  padding: 0 2.93333333rem 0;
+}
+.personal-centre .cancel-number .cancel-prompt {
+  margin-top: 3.33333333rem;
+}
+.personal-centre .cancel-number .cancel-prompt p {
+  color: #f13a3a;
+  font-size: 2.93333333rem;
+}
+.personal-centre .cancel-number .cancel-keep-confirm {
+  width: 53.33333333rem;
+  height: 8.8rem;
+  border-radius: 0.66666667rem;
+  border: 1px solid #1175d2;
+  background-color: #1175d2;
+  text-align: center;
+  line-height: 8.8rem;
+  margin: 8.66666667rem auto 6rem;
+}
+.personal-centre .cancel-number .cancel-keep-confirm p {
+  font-size: 3.06666667rem;
+  color: #ffff;
+}
+.personal-centre .cancel-number .cancel-cancel {
+  width: 53.33333333rem;
+  height: 8.8rem;
+  border-radius: 0.66666667rem;
+  border: 1px solid #1175d2;
+  text-align: center;
+  line-height: 8.8rem;
+  margin: 0 auto;
+}
+.personal-centre .cancel-number .cancel-cancel p {
+  font-size: 3.06666667rem;
+  color: #333333;
+}
+/* 个人中心弹层 开始 */
+.layer .layer-inner .layer-inner-box {
+  padding: 0 3.73333333rem;
+  /* 修改姓名弹层 start */
+  /* 修改姓名弹层 end */
+  /* 需要提醒的病例弹层 start */
+  /* 需要提醒的病例弹层 end */
+  /* 收到的提醒内容弹层 start */
+  /* 收到的提醒内容弹层 end */
+  /* 状态提醒弹层 strat */
+  /* 状态提醒弹层 end */
+  /* 输入手机账号弹层 start */
+  /* 输入手机账号弹层 end */
+  /* 输入邮箱弹层 start */
+  /* 输入邮箱弹层 end */
+  /* 选择后的背景颜色 */
+  /* 选择后的背景颜色 */
+  /* 选择地址弹窗 开始 */
+  /* 选择地址弹窗 结束 */
+}
+.layer .layer-inner .layer-inner-box .ipt-box-one {
+  height: 7.6rem;
+  line-height: 7.6rem;
+  margin: 4.66666667rem 6.13333333rem 9.73333333rem 6.13333333rem;
+  border-bottom: 0.53333333rem solid #1175D2;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-one input {
+  color: #333333;
+  font-size: 3.2rem;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-one input::placeholder {
+  font-size: 3.2rem;
+  color: #333333;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-two {
+  margin: 7.33333333rem 5.33333333rem 7.73333333rem;
+  display: flex;
+  justify-content: space-between;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-two div {
+  width: 34.66666667rem;
+  height: 7.46666667rem;
+  border: 1px solid #1175D2;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 7.46666667rem;
+  border-radius: 3.73333333rem;
+  font-size: 3.2rem;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-two .chioce {
+  color: #000;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-three {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-three .sd {
+  margin: 6.93333333rem 0 9.33333333rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-three .sd .lis {
+  width: 45%;
+  height: 7.46666667rem;
+  border: 1px solid #1175D2;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 7.46666667rem;
+  border-radius: 3.73333333rem;
+  font-size: 3.2rem;
+  color: #000;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-three .sd .list {
+  margin: 4.93333333rem 0;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-four {
+  padding: 0 18rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 7.33333333rem 0 7.73333333rem;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-four div {
+  border-radius: 3.73333333rem;
+  width: 21.33333333rem;
+  height: 7.33333333rem;
+  border: 1px solid #1175D2;
+  text-align: center;
+  line-height: 7.33333333rem;
+  font-size: 3.2rem;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-five {
+  height: 7.6rem;
+  line-height: 7.6rem;
+  margin: 4.66666667rem 6.13333333rem 9.73333333rem 6.13333333rem;
+  border-bottom: 0.53333333rem solid #1175D2;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-five input {
+  color: #333333;
+  font-size: 3.2rem;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-five input::placeholder {
+  font-size: 3.2rem;
+  color: #333333;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-sex {
+  height: 7.6rem;
+  line-height: 7.6rem;
+  margin: 4.66666667rem 6.13333333rem 9.73333333rem 6.13333333rem;
+  border-bottom: 0.53333333rem solid #1175D2;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-sex input {
+  color: #333333;
+  font-size: 3.2rem;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-sex input::placeholder {
+  font-size: 3.2rem;
+  color: #333333;
+}
+.layer .layer-inner .layer-inner-box .active {
+  background-color: #1175D2;
+  color: #fff !important;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-addr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5.33333333rem 0 9.33333333rem;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-addr div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 26.66666667rem;
+  height: 7.33333333rem;
+  padding: 0 2.66666667rem;
+  box-sizing: border-box;
+  border: 1px solid #1678d3;
+  border-radius: 0.66666667rem;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-addr div select {
+  width: 20rem;
+  height: 100%;
+  font-size: 3.2rem;
+  color: #999999;
+  border: none;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-addr div img {
+  width: 3.2rem;
+  height: 2.53333333rem;
+}
+/* 个人中心弹层 结束 */

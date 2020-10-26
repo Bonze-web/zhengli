@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "SourceHanSans-CN-Regular";
+  src: url("Source Han Sans CN Regular.ttf") format("truetype"),
+       url("Source Han Sans CN Regular.eot") format("embedded-opentype"),
+       url("Source Han Sans CN Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*替换下面样式*/
+#app, #home, body, html {
+  width: 100%;
+  overflow: overlay;
+  min-height: 100vh;
+  background: #dcdddf;
+  font-size: 16px;
+  font-family: "SourceHanSans-CN-Regular",SourceHanSansCn-Medium,Microsoft Yahei,Hiragino Sans GB,Helvetica Neue,Helvetica,tahoma,arial,WenQuanYi Micro Hei,Verdana,sans-serif,"\5B8B\4F53";
+}
